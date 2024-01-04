@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-suite" class="navigator-link">
+              <span class="suite-name border-failed">suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-suite" class="navigator-link ">
+                    <span>C:\Users\admin\eclipse-workspace\RentV_Project\src\test\resources\RentV_Testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-suite" class="navigator-link ">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite" class="hide-methods failed suite-suite"> (hide)</a> <!-- hide-methods failed suite-suite -->
+                      <a href="#" panel-name="suite-suite" class="show-methods failed suite-suite"> (show)</a> <!-- show-methods failed suite-suite -->
+                    </span>
+                    <div class="method-list-content failed suite-suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="confirmRequest(5a62b7be-e68e-481f-8979-1adbf6)">confirmRequest(5a62b7be-e68e-481f-8979-1adbf6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite" class="hide-methods passed suite-suite"> (hide)</a> <!-- hide-methods passed suite-suite -->
+                      <a href="#" panel-name="suite-suite" class="show-methods passed suite-suite"> (show)</a> <!-- show-methods passed suite-suite -->
+                    </span>
+                    <div class="method-list-content passed suite-suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="addFriends(ac1366e8-9db5-4504-97f1-c92459)">addFriends(ac1366e8-9db5-4504-97f1-c92459)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.Authentications" class="method navigator-link" hash-for-method="configProperties">configProperties</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.Authentications" class="method navigator-link" hash-for-method="confirmOtp">confirmOtp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="countOfPendingRequest">countOfPendingRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="deleteConnection(69a0868e-f2ca-449e-9163-3d8925)">deleteConnection(69a0868e-f2ca-449e-9163-3d8925)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="getConnections">getConnections</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="ignoreRequest(7b5f71d7-6ba2-453e-8967-b3dc49)">ignoreRequest(7b5f71d7-6ba2-453e-8967-b3dc49)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.Authentications" class="method navigator-link" hash-for-method="login(1122334455)">login(1122334455)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite" title="com.rentv.test.FriendsModule" class="method navigator-link" hash-for-method="receivedRequests">receivedRequests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suite" class="panel suite">
+          <div class="suite-suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rentv.test.FriendsModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmRequest(5a62b7be-e68e-481f-8979-1adbf6)">
+                  </a> <!-- confirmRequest(5a62b7be-e68e-481f-8979-1adbf6) -->
+                  <span class="method-name">confirmRequest</span>
+                  <span class="parameters">(5a62b7be-e68e-481f-8979-1adbf6)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.rentv.test.CommonFunctions.auth_Response(CommonFunctions.java:73)
+	at com.rentv.test.FriendsModule.confirmRequest(FriendsModule.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-failed -->
+          <div class="suite-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rentv.test.Authentications</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="configProperties">
+                  </a> <!-- configProperties -->
+                  <span class="method-name">configProperties</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmOtp">
+                  </a> <!-- confirmOtp -->
+                  <span class="method-name">confirmOtp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(1122334455)">
+                  </a> <!-- login(1122334455) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(1122334455)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-passed -->
+          <div class="suite-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rentv.test.FriendsModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addFriends(ac1366e8-9db5-4504-97f1-c92459)">
+                  </a> <!-- addFriends(ac1366e8-9db5-4504-97f1-c92459) -->
+                  <span class="method-name">addFriends</span>
+                  <span class="parameters">(ac1366e8-9db5-4504-97f1-c92459)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="countOfPendingRequest">
+                  </a> <!-- countOfPendingRequest -->
+                  <span class="method-name">countOfPendingRequest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteConnection(69a0868e-f2ca-449e-9163-3d8925)">
+                  </a> <!-- deleteConnection(69a0868e-f2ca-449e-9163-3d8925) -->
+                  <span class="method-name">deleteConnection</span>
+                  <span class="parameters">(69a0868e-f2ca-449e-9163-3d8925)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getConnections">
+                  </a> <!-- getConnections -->
+                  <span class="method-name">getConnections</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ignoreRequest(7b5f71d7-6ba2-453e-8967-b3dc49)">
+                  </a> <!-- ignoreRequest(7b5f71d7-6ba2-453e-8967-b3dc49) -->
+                  <span class="method-name">ignoreRequest</span>
+                  <span class="parameters">(7b5f71d7-6ba2-453e-8967-b3dc49)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="receivedRequests">
+                  </a> <!-- receivedRequests -->
+                  <span class="method-name">receivedRequests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-passed -->
+        </div> <!-- panel suite -->
+        <div panel-name="test-xml-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\admin\eclipse-workspace\RentV_Project\src\test\resources\RentV_Testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;MobileNumber&quot; value=&quot;1122334455&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Authentication&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Login&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rentv.test.Authentications&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authentication --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FriendsModule&quot;&gt;
+    &lt;parameter name=&quot;UserCodeForIgnore&quot; value=&quot;7b5f71d7-6ba2-453e-8967-b3dc49&quot;/&gt;
+    &lt;parameter name=&quot;UserCodeToSendRequest&quot; value=&quot;ac1366e8-9db5-4504-97f1-c92459&quot;/&gt;
+    &lt;parameter name=&quot;ConfirmUserRequestCode&quot; value=&quot;5a62b7be-e68e-481f-8979-1adbf6&quot;/&gt;
+    &lt;parameter name=&quot;UserCodeForDeletion&quot; value=&quot;69a0868e-f2ca-449e-9163-3d8925&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Connections&quot;/&gt;
+        &lt;include name=&quot;AddFriends&quot;/&gt;
+        &lt;include name=&quot;Requests&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rentv.test.FriendsModule&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FriendsModule --&gt;
+&lt;/suite&gt; &lt;!-- suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Authentication (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FriendsModule (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">AddFriends</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addFriends</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Connections</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteConnection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getConnections</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">configProperties</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">confirmOtp</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Requests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">confirmRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">countOfPendingRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ignoreRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">receivedRequests</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite');
+function tableData_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'com.rentv.test.Authentications')
+data.setCell(0, 3, 4548);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deleteConnection')
+data.setCell(1, 2, 'com.rentv.test.FriendsModule')
+data.setCell(1, 3, 3317);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'confirmOtp')
+data.setCell(2, 2, 'com.rentv.test.Authentications')
+data.setCell(2, 3, 2348);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ignoreRequest')
+data.setCell(3, 2, 'com.rentv.test.FriendsModule')
+data.setCell(3, 3, 1684);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addFriends')
+data.setCell(4, 2, 'com.rentv.test.FriendsModule')
+data.setCell(4, 3, 1515);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'countOfPendingRequest')
+data.setCell(5, 2, 'com.rentv.test.FriendsModule')
+data.setCell(5, 3, 1276);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'receivedRequests')
+data.setCell(6, 2, 'com.rentv.test.FriendsModule')
+data.setCell(6, 3, 988);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'confirmRequest')
+data.setCell(7, 2, 'com.rentv.test.FriendsModule')
+data.setCell(7, 3, 612);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getConnections')
+data.setCell(8, 2, 'com.rentv.test.FriendsModule')
+data.setCell(8, 3, 535);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'configProperties')
+data.setCell(9, 2, 'com.rentv.test.Authentications')
+data.setCell(9, 3, 16);
+window.suiteTableData['suite']= { tableData: data, tableDiv: 'times-div-suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-suite">
+              </div> <!-- times-div-suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.rentv.test.FriendsModule</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">confirmOtp</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">configProperties</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rentv.test.Authentications</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">configProperties</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(1122334455)</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmOtp</span>
+                <span class="method-start">4587 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rentv.test.FriendsModule</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getConnections</span>
+                <span class="method-start">7106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteConnection(69a0868e-f2ca-449e-9163-3d8925)</span>
+                <span class="method-start">7649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addFriends(ac1366e8-9db5-4504-97f1-c92459)</span>
+                <span class="method-start">10974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">receivedRequests</span>
+                <span class="method-start">12496 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">countOfPendingRequest</span>
+                <span class="method-start">13490 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">confirmRequest(5a62b7be-e68e-481f-8979-1adbf6)</span>
+                <span class="method-start">14773 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ignoreRequest(7b5f71d7-6ba2-453e-8967-b3dc49)</span>
+                <span class="method-start">15392 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

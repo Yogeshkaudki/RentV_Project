@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <parameter name="MobileNumber" value="1122334455"/>
+  <test thread-count="5" name="FriendsModule(failed)">
+    <parameter name="UserCodeForIgnore" value="7b5f71d7-6ba2-453e-8967-b3dc49"/>
+    <parameter name="UserCodeToSendRequest" value="ac1366e8-9db5-4504-97f1-c92459"/>
+    <parameter name="ConfirmUserRequestCode" value="5a62b7be-e68e-481f-8979-1adbf6"/>
+    <parameter name="UserCodeForDeletion" value="69a0868e-f2ca-449e-9163-3d8925"/>
+    <groups>
+      <run>
+        <include name="Connections"/>
+        <include name="AddFriends"/>
+        <include name="Requests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.rentv.test.FriendsModule">
+        <methods>
+          <include name="confirmRequest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.rentv.test.FriendsModule -->
+    </classes>
+  </test> <!-- FriendsModule(failed) -->
+</suite> <!-- Failed suite [suite] -->

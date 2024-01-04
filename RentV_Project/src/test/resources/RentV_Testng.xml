@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite">
+<parameter name="MobileNumber" value="1122334455"/>
+<test name="Authentication">
+	<groups>
+		<run>
+			<include name="Login"/>
+		</run>
+	</groups>
+	<classes>
+		<class name="com.rentv.test.Authentications"/>
+	</classes>
+			
+</test>
+	
+	<!-- 
+		StartDate	05-12-2023 - 1701766991
+					06-12-2023 - 1701853391
+					07-12-2023 - 1701939791
+					08-12-2023 - 1702026191
+					09-12-2023 - 1702112591
+		EndDate		10-12-2023 - 1702198991
+		
+		Hyderabad -> Latitude - 17.385044
+				  -> Longitude - 78.486671
+				  
+		Bangalore -> Latitude - 12.971599
+				  -> Longitude - 77.594566
+				  
+		Kothagudem	-> Latitude - 17.556004
+				  	-> Longitude - 80.614395		
+				  
+		User Codes -> Yogesh - ac1366e8-9db5-4504-97f1-c92459
+				   -> Nirmala - 7b5f71d7-6ba2-453e-8967-b3dc49
+				   -> Devi - d535527a-68c9-4275-96fb-c50c8c
+				   -> Kamala - 751e6693-4fa9-40e2-8ff2-a9cb1b
+				   -> Honey - 5a62b7be-e68e-481f-8979-1adbf6
+				   -> Ganesh - 69a0868e-f2ca-449e-9163-3d8925
+		
+		Vehicle Codes -> BMW 3 Series - 4db2cfc8-01fb-4008-930c-c742dd
+				   -> BMW 5 Series - 9abfee82-df5c-4f30-93a9-832cfd
+				   -> Honda Amaze - 844089cc-16ff-4080-b6cc-c81bbf
+				   -> Ford Fusion - e0d53328-b887-4512-81d2-4db245
+				   -> Audi Q3 - 5e5b1e8b-0461-4653-b6f6-81e830
+				   -> Hyundai Accent - 95bc7589-e8da-4d34-ba0f-b2c0b5
+		-->	
+
+	<test name="FriendsModule">
+		<parameter name="UserCodeForDeletion" value="69a0868e-f2ca-449e-9163-3d8925"/>
+		<parameter name="UserCodeToSendRequest" value="ac1366e8-9db5-4504-97f1-c92459"/>
+		<parameter name="ConfirmUserRequestCode" value="5a62b7be-e68e-481f-8979-1adbf6"/>
+		<parameter name="UserCodeForIgnore" value="7b5f71d7-6ba2-453e-8967-b3dc49"/>
+		<groups>
+			<run>
+				<include name="Connections"/>
+				<include name="AddFriends"/>
+				<include name="Requests"/>
+			</run>
+			</groups>
+			<classes>
+				<class name="com.rentv.test.FriendsModule"/>
+			</classes>
+			</test>
+
+	<test name="Profile">
+		<parameter name="NameToUpdate" value="Dhanush New"/>
+		<parameter name="AgeToUpdate" value="20"/>
+		<groups>
+			<run>
+				<include name="profile"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.rentv.test.Profile"/>
+		</classes>
+	</test>
+
+	<test name="NotificationsModule">
+		<parameter name="UserCodeForNotificationDelete" value=""/>
+		<groups>
+			<run>
+				<include name="Notifications"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.rentv.test.NotificationsModule"/>
+		</classes>
+	</test>
+
+	<test name="RegisteredVehicles">
+		<parameter name="RegNo" value="TG3210"/>
+		<parameter name="UpdateByCompanyName" value="AUDI"/>
+		<parameter name="UpdateByModelName" value="Q3"/>
+		<parameter name="DeleteVehicleCode" value="ae246b9e-9e11-4b6c-90f4-8af8ca"/>
+		<!--
+		ae246b9e-9e11-4b6c-90f4-8af8ca - Aeroride
+		-->
+		<parameter name="StartDateForListing" value="1702026191"/>
+		<parameter name="EndDateForListing" value="1702198991"/>
+		
+		<groups>
+			<run>
+				<include name="RegisteredVehicles"/>
+				<include name="ListedVehicles"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.rentv.test.RegisteredVehicles"/>
+		</classes>
+	</test>
+	
+	<test name="SearchVehicles">
+		<parameter name="StartDate" value="1702026191"/>
+		<parameter name="EndDate" value="1702198991"/>
+		<parameter name="SearchByCompanyName" value="BMW"/>
+		<parameter name="SearchByCompany" value="Audi"/>
+		<parameter name="SearchByModel" value="Q5"/>
+		<groups>
+			<run>
+				<include name="AvailableVehicles"/>
+				<include name="SearchFilters"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.rentv.test.SearchVehiclesModule"/>
+		</classes>
+	</test>
+
+	<test name="TripsModule">
+		<parameter name="TripStatus" value="UPCOMING"/>
+		<parameter name="VehicleCodeToCreate" value="e0d53328-b887-4512-81d2-4db245"/>
+		<!-- e0d53328-b887-4512-81d2-4db245 - Ford Fusion 
+		-->
+		<parameter name="StartDate" value="1702026191"/>
+		<parameter name="EndDate" value="1702198991"/>
+		<parameter name="Latitude" value="12.971599"/>
+		<parameter name="Longitude" value="77.594566"/>
+		<parameter name="VehicleCodeForUpdate" value="5e5b1e8b-0461-4653-b6f6-81e830"/>
+		<parameter name="EditStartDate" value="1702026191"/>
+		<parameter name="EditEndDate" value="1702198991"/>
+		<groups>
+			<run>
+				<include name="TripStatusPage"/>
+				<include name="CreateTrip"/>
+				<include name="EditTrip"/>
+				<include name="UpdatedTripsCount"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.rentv.test.TripsModule"/>
+		</classes>
+	</test>
+</suite> 
